@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select values for Fault code</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            position: relative;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin: 20px 0;
+        }
+        .dropdown-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .submit-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            select {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+        }
+    </style>
+    <script>
+        // Function to display request header and body
+        function displayRequestDetails(header, body) {
+            const headerDiv = document.getElementById("request-header");
+            const bodyDiv = document.getElementById("request-body");
+
+            // Display request header
+            headerDiv.innerHTML = "<h2>Request Header:</h2><pre>" + JSON.stringify(header, null, 2) + "</pre>";
+
+            // Display request body
+            bodyDiv.innerHTML = "<h2>Request Body:</h2><pre>" + JSON.stringify(body, null, 2) + "</pre>";
+        }
+    </script>
+</head>
+<body>
+    <h1>Request details</h1>
+    <!-- Your existing HTML content -->
+    <!-- Add a section to display request details -->
+    <div id="request-details"></div>
+
+    <script>
+        // Call the function to display request details when the page loads
+        window.onload = function() {
+            // Check if the page was loaded via POST request
+            if (window.location.search.includes("method=POST")) {
+                // Extract request header and body from URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const header = JSON.parse(urlParams.get('header'));
+                const body = JSON.parse(urlParams.get('body'));
+
+                // Display request details
+                displayRequestDetails(header, body);
+            }
+        }
+    </script>
+</body>
+</html>

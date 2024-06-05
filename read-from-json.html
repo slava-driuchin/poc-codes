@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fault Code Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .field {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Select Fault Code</h1>
+    <div class="field">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Dispenser/Tank/Line">Dispenser/Tank/Line</option>
+            <!-- Add more categories here if needed -->
+        </select>
+    </div>
+    <div class="field">
+        <label for="subcategory">Subcategory:</label>
+        <select id="subcategory">
+            <option value="Alarms">Alarms</option>
+            <!-- Add more subcategories here if needed -->
+        </select>
+    </div>
+    <div class="field">
+        <label for="faultCode">Fault Code:</label>
+        <select id="faultCode">
+            <!-- <option value="" disabled selected>Please select Fault code</option> -->
+            <!-- Fault codes will be populated here based on the selected category and subcategory -->
+        </select>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const categorySelect = document.getElementById('category');
+        const subcategorySelect = document.getElementById('subcategory');
+        const faultCodeSelect = document.getElementById('faultCode');
+
+        function populateFaultCodes(data) {
+            // Clear the current options
+            faultCodeSelect.innerHTML = '';
+
+            // Get the selected category and subcategory
+            const selectedCategory = categorySelect.value;
+            const selectedSubcategory = subcategorySelect.value;
+
+            // Filter the data based on the selected category and subcategory
+            const filteredData = data.filter((item => 
+                item.Category === selectedCategory && item.Subcategory === selectedSubcategory)
+            );
+
+            // Populate the fault codes
+            filteredData.forEach(item => {
+                const option = document.createElement('option');
+                option.value = item.Fault;
+                option.textContent = item.Fault;
+                faultCodeSelect.appendChild(option);
+            });
+        }
+
+        // Fetch JSON data from the external file
+        fetch('murphy-fault-data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Populate fault codes on page load
+                populateFaultCodes(data);
+
+                // Add event listeners to update fault codes when category or subcategory changes
+                categorySelect.addEventListener('change', () => populateFaultCodes(data));
+                subcategorySelect.addEventListener('change', () => populateFaultCodes(data));
+            })
+            .catch(error => console.error('Error loading fault codes:', error));
+    });
+</script>
+
+</body>
+</html>

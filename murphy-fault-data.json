@@ -1,0 +1,27 @@
+[
+    {
+        "Category": "Dispenser/Tank/Line",
+        "Subcategory": "Alarms",
+        "Fault": "Dispenser Sump Interstitial Sensor Issue"
+    },
+    {
+        "Category": "Dispenser/Tank/Line",
+        "Subcategory": "Alarms",
+        "Fault": "Interstitial Sensor Alarm due to contractor"
+    },
+    {
+        "Category": "Dispenser/Tank/Line",
+        "Subcategory": "Alarms",
+        "Fault": "Interstitial Sensor Alarm due to Tester"
+    },
+    {
+        "Category": "Dispenser/Tank/Line",
+        "Subcategory": "Alarms",
+        "Fault": "Spill Bucket Interstitial Sensor Issue"
+    },
+    {
+        "Category": "Dispenser/Tank/Line",
+        "Subcategory": "Alarms",
+        "Fault": "STP Sump Interstitial Sensor Issue"
+    }
+]

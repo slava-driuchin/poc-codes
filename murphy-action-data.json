@@ -1,0 +1,92 @@
+[
+    {
+        "Category": "Dispenser/Tank/Line",
+        "Subcategory": "Tanks",
+        "Fault": "Tank Samples Gathered"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Cash Drawer",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Combo Printer",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Down Store (Use If Site Has Only 1 POS)",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Fuel Controller",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Fuel Digi",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Meraki Switch",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Network Switch",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "POS Computer",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Printer Scanner",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "POS",
+        "Subcategory": "Register Scanner",
+        "Fault": "Resolved"
+    },
+    {
+        "Category": "PPM",
+        "Subcategory": "Calibration - PPM",
+        "Fault": "Inspected"
+    },
+    {
+        "Category": "PPM",
+        "Subcategory": "",
+        "Fault": "PPM Work Completed"
+    },
+    {
+        "Category": "PPM",
+        "Subcategory": "Calibration - PPM",
+        "Fault": "State Calibration"
+    },
+    {
+        "Category": "PPM",
+        "Subcategory": "Calibration - PPM",
+        "Fault": "Tested"
+    },
+    {
+        "Category": "",
+        "Subcategory": "",
+        "Fault": "Billing for Incurred Charges"
+    },
+    {
+        "Category": "",
+        "Subcategory": "",
+        "Fault": "Repaired"
+    },
+    {
+        "Category": "",
+        "Subcategory": "",
+        "Fault": "Repaired Part"
+    }
+]

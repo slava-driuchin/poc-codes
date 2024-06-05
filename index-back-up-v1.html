@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select values for Fault code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            position: relative;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin: 20px 0;
+        }
+        .dropdown-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .submit-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            select {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+        }
+    </style>
+    <script>
+        function updateFaultOptions() {
+            const reasonSelect = document.getElementById("reason");
+            const faultSelect = document.getElementById("fault");
+            const actionSelect = document.getElementById("action");
+            const submitButton = document.getElementById("submit-btn");
+
+            const faultOptions = {
+                "Bad quality": ["Bad - A", "Bad - B"],
+                "Missed timeframe": ["Missed - A", "Missed - B", "Missed - C"],
+                "Delayed maintenance": ["Delayed - A", "Delayed - B"]
+            };
+
+            const selectedReason = reasonSelect.value;
+            const selectedFault = faultSelect.value;
+            const selectedAction = actionSelect.value;
+
+            // Update fault dropdown options
+            const options = faultOptions[selectedReason] || [];
+            faultSelect.innerHTML = "<option value='' disabled>Please select a fault</option>";
+
+            options.forEach(option => {
+                const opt = document.createElement("option");
+                opt.value = option;
+                opt.textContent = option;
+                faultSelect.appendChild(opt);
+            });
+
+            // Check if a fault is already selected
+            if (selectedFault && options.includes(selectedFault)) {
+                faultSelect.value = selectedFault;
+            } else {
+                faultSelect.value = ''; // Reset to default value
+            }
+
+            // Check if all dropdowns have selected values
+            if (selectedReason && selectedFault && selectedAction) {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        // Function to display selected value in dropdown
+        function displaySelectedValue(selectElement) {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            selectedOption.textContent = selectedOption.value;
+        }
+    </script>
+</head>
+<body>
+    <h1>Select values for Fault code</h1>
+    <div class="dropdown-container">
+        <label for="reason">Select Reason</label>
+        <select id="reason" onchange="updateFaultOptions(); displaySelectedValue(this);">
+            <option value="" disabled selected>Please select a reason</option>
+            <option value="Bad quality">Bad quality</option>
+            <option value="Missed timeframe">Missed timeframe</option>
+            <option value="Delayed maintenance">Delayed maintenance</option>
+        </select>
+    </div>
+    <div class="dropdown-container">
+        <label for="fault">Select Fault</label>
+        <select id="fault" onchange="updateFaultOptions(); displaySelectedValue(this);">
+            <option value="" disabled selected>Please select a fault</option>
+        </select>
+    </div>
+
+    <hr>
+
+    <h1>Select values for Action code</h1>
+    <div class="dropdown-container">
+        <label for="action">Select Action code</label>
+        <select id="action" onchange="updateFaultOptions(); displaySelectedValue(this);">
+            <option value="" disabled selected>Please select an action</option>
+            <option value="Fix">Fix</option>
+            <option value="Repair">Repair</option>
+            <option value="Observe">Observe</option>
+        </select>
+    </div>
+
+    <button id="submit-btn" class="submit-button" disabled>Submit</button>
+</body>
+</html>
