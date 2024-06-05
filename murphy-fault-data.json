@@ -23,5 +23,775 @@
         "Category": "Dispenser/Tank/Line",
         "Subcategory": "Alarms",
         "Fault": "STP Sump Interstitial Sensor Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"E-Stop Down Store"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"E-Stop Not Working"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Grade Select Not Operating"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Graphics"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Hit Dispenser"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Hose Retractor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Island"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Key"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Keypad"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Leak"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Lighting Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Maint Calibration"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Meter"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Meter Gasket Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Meter Leaking"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Nozzle"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Power Supply Issues"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"PPU Issue/Display Out"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Printer Not Operable"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Proportional Valve Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Pulser Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Pump CPU Board Out"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Pump CPU Board Out & Meter Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Pump Reprogram"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Red Alarm Sticker"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Red Board"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Remote - Wayne/Gilbarco"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Shear Valve"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Slow Flow"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Slow Flow - Single Dispenser"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Small Pothole"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Software Reload"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Dispenser",
+        "Fault":"Vaper Vac Motors Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Cross Drop"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Fuel Polishing"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Odor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Out of Fuel - Diesel"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Out of Fuel - E85"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Out of Fuel - Premium"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Out of Fuel - Premium E0"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Out of Fuel - Regular"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Out of Fuel - Regular E0"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Tank Cleaning"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Tank Samples"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Water in Tank Greater Than 2 inches"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Water in Tank Less Than 2 inches"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Fuel Quality",
+        "Fault":"Water Sensor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Intercom System",
+        "Fault":"Intercom Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Intercom System",
+        "Fault":"Speaker Not Working"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Notice of Violations",
+        "Fault":"NoV Air Quality"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Notice of Violations",
+        "Fault":"NoV Fire/Self Service/Motor Fuel"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Notice of Violations",
+        "Fault":"NoV Health/Safety"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Notice of Violations",
+        "Fault":"NoV Underground Storage Tanks (UST)"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Notice of Violations",
+        "Fault":"NoV Weights and Measures (WM)"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Notice of Violations",
+        "Fault":"Red Tag"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Piping",
+        "Fault":"Pipe Fitting Replacement"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Piping",
+        "Fault":"Piping Repairs/Replacement"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Smart Controller",
+        "Fault":"Alarm"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Smart Controller",
+        "Fault":"No Power"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Smart Controller",
+        "Fault":"STP Controller Issues"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Spill/Vapor Bucket",
+        "Fault":"Leak"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Spill/Vapor Bucket",
+        "Fault":"spill bucket repairs"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Spill/Vapor Bucket",
+        "Fault":"vapor bucket repairs"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"Mechanical Leak Detector"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"Motor Repair/Replacement"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - DEF"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - Diesel"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - E0 Premium"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - E0 Regular"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - E85"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - Mid"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - Premium"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Submersible Pump",
+        "Fault":"No Flow/Slow Flow - Regular"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Cathodic Protection"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Lid Repairs"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Penetration Boot Repairs"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Sump Sensor Broken"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Sump Wall Repairs/Sump Replacement"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Tank Sump - Fuel Present"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Tank Sump - Water Present"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Tank Sump Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"STP Tank Sump",
+        "Fault":"Tank Sump Sensor Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Blow Out Vent Lines"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Boot/Flapper Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Broken Riser Caps"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Broken Vapor Plunge"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Clogged Motor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Corroded Valve"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Cross Drop"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Down Store - Tank Testing"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Drop Tube Damaged"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Faulty Capacitor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Fill Adapter Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Fuel Polishing"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Install Sensor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Interstitial Sensor Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Leak"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Leak Detector Alarm"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Lids Broken"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Missing Sump Lid Knobs"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Motor Overload Alarm"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Odor"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Out of Fuel - Diesel"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Out of Fuel - Premium"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Out of Fuel - Regular"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Overfill Devices"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Petroleum Piping Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Pressure Issues"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Relays Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Replace Seal Wire"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Riser Adapter issues"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Spill Buckets"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Sump Water Remediation"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Swollen/Damaged Pipe"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Cleaning"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Data Correction"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Monitor Alarm"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Monitor Offline"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Probe Broken/Stuck"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Reading"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tank Sample Required"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Tanks Not Evening Out"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Unloading Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Vapor Fitting"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Vapor Recovery Adapter"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Vapor Recovery Adaptor Issues"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Vapor Recovery Ball Float Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Vent Cap (PV Valve) Issue"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Waste Water/Debris In Pump"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Water In Tank Greater Than 2\""
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Tanks",
+        "Fault":"Water In Tank Less Than 2\""
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":"Waste Drums",
+        "Fault":"Waste Drum Pick Up Needed"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":null,
+        "Fault":"General Repair"
+    },
+    {
+        "Category":"Dispenser/Tank/Line",
+        "Subcategory":null,
+        "Fault":"General Wear"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Cash Drawer",
+        "Fault":"Cash Drawer Issue"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Combo Printer",
+        "Fault":"Combo Printer issue"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Down Store (Use If Site Has Only 1 POS)",
+        "Fault":"Down Store (Use If Site Has Only 1 POS)"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Fuel Controller",
+        "Fault":"Computer"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Fuel Controller",
+        "Fault":"Fuel Controller Down Store"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Fuel Controller",
+        "Fault":"MAS Control Panel"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Fuel Controller",
+        "Fault":"Price Change Failed"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Fuel Digi",
+        "Fault":"Fuel Digi Issue"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Meraki Switch",
+        "Fault":"Meraki Switch"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Network Switch",
+        "Fault":"Network Switch"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"POS Computer",
+        "Fault":"POS Computer"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"POS Computer",
+        "Fault":"POS Down (Not Down Store)"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"POS Computer",
+        "Fault":"Register Locked"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Printer Scanner",
+        "Fault":"Printer Scanner Issue"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Register Scanner",
+        "Fault":"Register Scanner Cradle"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Register Scanner",
+        "Fault":"Register Scanner No Power"
+    },
+    {
+        "Category":"POS",
+        "Subcategory":"Register Scanner",
+        "Fault":"Register Scanner Not Scanning"
+    },
+    {
+        "Category":"PPM",
+        "Subcategory":"Calibration  - PPM",
+        "Fault":"Calibrated"
+    },
+    {
+        "Category":"PPM",
+        "Subcategory":"Calibration  - PPM",
+        "Fault":"PPM - Inspections"
+    },
+    {
+        "Category":null,
+        "Subcategory":null,
+        "Fault":"Billing Purposes Only"
     }
 ]
