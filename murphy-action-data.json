@@ -75,18 +75,18 @@
         "Fault": "Tested"
     },
     {
-        "Category": "",
-        "Subcategory": "",
+        "Category": null,
+        "Subcategory": null,
         "Fault": "Billing for Incurred Charges"
     },
     {
-        "Category": "",
-        "Subcategory": "",
+        "Category": null,
+        "Subcategory": null,
         "Fault": "Repaired"
     },
     {
-        "Category": "",
-        "Subcategory": "",
+        "Category": null,
+        "Subcategory": null,
         "Fault": "Repaired Part"
     }
 ]

@@ -42,37 +42,38 @@
 <body>
 
     <div class="container">
-        <div class="field">
-            <label for="category">Category:</label>
-            <select id="category">
-                <option value="Dispenser/Tank/Line">Dispenser/Tank/Line</option>
-                <!-- Add more categories here if needed -->
-            </select>
-        </div>
-        <div class="field">
-            <label for="subcategory">Subcategory:</label>
-            <select id="subcategory">
-                <option value="Fuel Dispenser">Fuel Dispenser</option>
-                <!-- Add more subcategories here if needed -->
-            </select>
-        </div>
-        <hr>
-        <h2>Select Fault Code</h1>
+        <h3>Main Customer: Murphy</h1>
             <div class="field">
-                <select id="faultCode">
-                    <!-- <option value="" disabled selected>Please select Fault code</option> -->
-                    <!-- Fault codes will be populated here based on the selected category and subcategory -->
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="Dispenser/Tank/Line">Dispenser/Tank/Line</option>
+                    <!-- Add more categories here if needed -->
                 </select>
             </div>
-
+            <div class="field">
+                <label for="subcategory">Subcategory:</label>
+                <select id="subcategory">
+                    <option value="Tanks">Tanks</option>
+                    <!-- Add more subcategories here if needed -->
+                </select>
+            </div>
             <hr>
-            <h2>Select Action Code</h1>
+            <h2>Select Fault Code</h1>
                 <div class="field">
-                    <select id="actionCode">
+                    <select id="faultCode">
                         <!-- <option value="" disabled selected>Please select Fault code</option> -->
                         <!-- Fault codes will be populated here based on the selected category and subcategory -->
                     </select>
                 </div>
+
+                <hr>
+                <h2>Select Action Code</h1>
+                    <div class="field">
+                        <select id="actionCode">
+                            <!-- <option value="" disabled selected>Please select Fault code</option> -->
+                            <!-- Fault codes will be populated here based on the selected category and subcategory -->
+                        </select>
+                    </div>
     </div>
 
     <script>
@@ -128,7 +129,8 @@
 
                 // Filter the data based on the selected category and subcategory
                 const filteredData = data.filter((item =>
-                    item.Category === "PPM" && item.Subcategory === "Calibration - PPM")
+                    (item.Category === selectedCategory && item.Subcategory === selectedSubcategory)
+                    || item.Category === null || item.Subcategory === null)
                 );
 
                 // Populate the fault codes
