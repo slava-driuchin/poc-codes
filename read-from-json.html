@@ -36,45 +36,78 @@
             border-top: 2px solid #ccc;
             margin: 20px 0;
         }
+
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .submit-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .success-message {
+            color: green;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .sync-message {
+            color: black;
+            font-size: 1.5em;
+            /* text-align: center; */
+        }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-        <h3>Main Customer: Murphy</h1>
-            <div class="field">
-                <label for="category">Category:</label>
-                <select id="category">
-                    <option value="Dispenser/Tank/Line">Dispenser/Tank/Line</option>
-                    <!-- Add more categories here if needed -->
-                </select>
-            </div>
-            <div class="field">
-                <label for="subcategory">Subcategory:</label>
-                <select id="subcategory">
-                    <option value="Tanks">Tanks</option>
-                    <!-- Add more subcategories here if needed -->
-                </select>
-            </div>
-            <hr>
-            <h2>Select Fault Code</h1>
-                <div class="field">
-                    <select id="faultCode">
-                        <!-- <option value="" disabled selected>Please select Fault code</option> -->
-                        <!-- Fault codes will be populated here based on the selected category and subcategory -->
-                    </select>
-                </div>
+        <h3>Main Customer: Murphy</h3>
+        <div class="field">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="Dispenser/Tank/Line">Dispenser/Tank/Line</option>
+                <!-- Add more categories here if needed -->
+            </select>
+        </div>
+        <div class="field">
+            <label for="subcategory">Subcategory:</label>
+            <select id="subcategory">
+                <option value="Tanks">Tanks</option>
+                <!-- Add more subcategories here if needed -->
+            </select>
+        </div>
+        <hr>
+        <h2>Select Fault Code</h2>
+        <div class="field">
+            <select id="faultCode">
+                <!-- <option value="" disabled selected>Please select Fault code</option> -->
+                <!-- Fault codes will be populated here based on the selected category and subcategory -->
+            </select>
+        </div>
 
-                <hr>
-                <h2>Select Action Code</h1>
-                    <div class="field">
-                        <select id="actionCode">
-                            <!-- <option value="" disabled selected>Please select Fault code</option> -->
-                            <!-- Fault codes will be populated here based on the selected category and subcategory -->
-                        </select>
-                    </div>
+        <hr>
+        <h2>Select Action Code</h2>
+        <div class="field">
+            <select id="actionCode">
+                <!-- <option value="" disabled selected>Please select Fault code</option> -->
+                <!-- Fault codes will be populated here based on the selected category and subcategory -->
+            </select>
+        </div>
     </div>
+
+    <hr>
+    <button id="submit-btn" class="submit-button" disabled>Submit</button>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -82,21 +115,17 @@
             const subcategorySelect = document.getElementById('subcategory');
             const faultCodeSelect = document.getElementById('faultCode');
             const actionCodeSelect = document.getElementById('actionCode');
+            const submitButton = document.getElementById("submit-btn");
 
             function populateFaultCodes(data) {
-                // Clear the current options
                 faultCodeSelect.innerHTML = '';
-
-                // Get the selected category and subcategory
                 const selectedCategory = categorySelect.value;
                 const selectedSubcategory = subcategorySelect.value;
 
-                // Filter the data based on the selected category and subcategory
-                const filteredData = data.filter((item =>
-                    item.Category === selectedCategory && item.Subcategory === selectedSubcategory)
+                const filteredData = data.filter(item =>
+                    item.Category === selectedCategory && item.Subcategory === selectedSubcategory
                 );
 
-                // Populate the fault codes
                 filteredData.forEach(item => {
                     const option = document.createElement('option');
                     option.value = item.Fault;
@@ -105,35 +134,16 @@
                 });
             }
 
-            // Fetch JSON data from the external file
-            fetch('murphy-fault-data.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Populate fault codes on page load
-                    populateFaultCodes(data);
-
-                    // Add event listeners to update fault codes when category or subcategory changes
-                    categorySelect.addEventListener('change', () => populateFaultCodes(data));
-                    subcategorySelect.addEventListener('change', () => populateFaultCodes(data));
-                })
-                .catch(error => console.error('Error loading fault codes:', error));
-
-
             function populateActionCodes(data) {
-                // Clear the current options
                 actionCodeSelect.innerHTML = '';
-
-                // Get the selected category and subcategory
                 const selectedCategory = categorySelect.value;
                 const selectedSubcategory = subcategorySelect.value;
 
-                // Filter the data based on the selected category and subcategory
-                const filteredData = data.filter((item =>
-                    (item.Category === selectedCategory && item.Subcategory === selectedSubcategory)
-                    || item.Category === null || item.Subcategory === null)
+                const filteredData = data.filter(item =>
+                    (item.Category === selectedCategory && item.Subcategory === selectedSubcategory) ||
+                    item.Category === null || item.Subcategory === null
                 );
 
-                // Populate the fault codes
                 filteredData.forEach(item => {
                     const option = document.createElement('option');
                     option.value = item.Fault;
@@ -142,20 +152,68 @@
                 });
             }
 
+            function updateSubmitButtonState() {
+                submitButton.disabled = !(faultCodeSelect.value && actionCodeSelect.value);
+            }
+
+            fetch('murphy-fault-data.json')
+                .then(response => response.json())
+                .then(data => {
+                    populateFaultCodes(data);
+                    categorySelect.addEventListener('change', () => {
+                        populateFaultCodes(data);
+                        updateSubmitButtonState();
+                    });
+                    subcategorySelect.addEventListener('change', () => {
+                        populateFaultCodes(data);
+                        updateSubmitButtonState();
+                    });
+                })
+                .catch(error => console.error('Error loading fault codes:', error));
+
             fetch('murphy-action-data.json')
                 .then(response => response.json())
                 .then(data => {
-                    // Populate fault codes on page load
                     populateActionCodes(data);
-
-                    // Add event listeners to update fault codes when category or subcategory changes
-                    categorySelect.addEventListener('change', () => populateActionCodes(data));
-                    subcategorySelect.addEventListener('change', () => populateActionCodes(data));
+                    categorySelect.addEventListener('change', () => {
+                        populateActionCodes(data);
+                        updateSubmitButtonState();
+                    });
+                    subcategorySelect.addEventListener('change', () => {
+                        populateActionCodes(data);
+                        updateSubmitButtonState();
+                    });
                 })
-                .catch(error => console.error('Error loading fault codes:', error));
+                .catch(error => console.error('Error loading action codes:', error));
+
+            faultCodeSelect.addEventListener('change', updateSubmitButtonState);
+            actionCodeSelect.addEventListener('change', updateSubmitButtonState);
+
+            function handleSubmit() {
+                document.body.innerHTML = '';
+
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.textContent = 'Successfully submitted.';
+                document.body.appendChild(successMessage);
+
+                const syncMessage = document.createElement('div');
+                syncMessage.className = 'sync-message';
+                syncMessage.innerHTML = `
+                    <ol>
+                        <li>Go back to FSM Mobile application</li>
+                        <li>Sync your application by pressing on the arrow in the top left corner</li>
+                        <li>Open the mandatory Checklist called "Abc" for given Activity</li>
+                        <li>Submit Checklist</li>
+                        <li>Continue regular working process</li>
+                    </ol>
+                `;
+                document.body.appendChild(syncMessage);
+            }
+
+            submitButton.addEventListener('click', handleSubmit);
         });
     </script>
-
 </body>
 
 </html>
