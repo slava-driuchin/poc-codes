@@ -1,0 +1,19 @@
+curl --location 'https://us.coresuite.com/api/query/v1/?account=spatco_t1&user=lewisr&company=spatco&clientIdentifier=COR_MOBILE_IPAD&dtos=ServiceCall.27%3BActivity.43' \
+--header 'Origin: http://localhost:3000' \
+--header 'Accept-Encoding: gzip, deflate' \
+--header 'Accept-Language: en-US,en;q=0.8,de;q=0.6' \
+--header 'Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNsb3VkLWF1dGhlbnRpY2F0aW9uLXNlcnZpY2UtdXMifQ.eyJ0ZW5hbnRfaWQiOiIwMDAwMDAwMDA3NDI5MzU4NTMiLCJhdXRoX3R5cGUiOiJQQVNTV09SRCIsInVzZXJfZW1haWwiOm51bGwsInVzZXJfbmFtZSI6InNwYXRjb19UMS9zaGVmZmllbGRkIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJjbGllbnRfaWQiOiJpb3MiLCJ1c2VyX3V1aWQiOm51bGwsImNvbXBhbmllcyI6W3siaWQiOjEwNTc1NCwibmFtZSI6IlNQQVRDTyIsImRlc2NyaXB0aW9uIjoiU1BBVENPIEVuZXJneSBTb2x1dGlvbnMiLCJzdHJpY3RFbmNyeXB0aW9uUG9saWN5IjpmYWxzZSwicGVybWlzc2lvbkdyb3VwSWQiOjQ1MzI5LCJwZXJzb25JZCI6IjRmMzNlYzc1ZjFiNzQyZmRhY2RiNTYyOTEzZDJjMTk4In1dLCJhY2NvdW50X2lkIjo5NjMwMCwidXNlcl9pZCI6MzgwNzYyLCJwZXJtaXNzaW9uX2dyb3VwX2lkIjpudWxsLCJleHAiOjE3MjAxNzM0MTEsInVzZXIiOiJzaGVmZmllbGRkIiwianRpIjoiS3ZKcERhVUVxZWJVa01VeVA2N2p6b3kxUTA0IiwiYWNjb3VudCI6InNwYXRjb19UMSJ9.NtSFCg9gcK6WYqbmg-HuLBRRK9PKZ5zhfbSEHCRItwF5fSt7FhXi_pjU_3B_Y9YE4DADaTs_Ja8qp9JmjVDvQnnBeOmEfsb0_BumGwIVghbjDJAECUAKAwhne88khtktcvMT9ft8YmSA87-nTY9P-BabphTK-yXfw-AAmbjKHSVLGUiZEOuZ_t99J1G5kLN5fafKbSjXu1j3QF4DajNAOmPR8rgnCqrjbq-3jbdFYBka0d8co8DYA8mHopVj5jp2Vqijzpva8Z8LzG-DiSbFYJ-w6dnvVhi0uSNFGfgt2Wkn3iq8BqvcALBdDg5KGDwK4I4cbnsY_OFEr71ZYnsZ0Q' \
+--header 'Connection: keep-alive' \
+--header 'X-Request-ID: 2B799EC0-05D4-4050-8321-8C87BA0FC012' \
+--header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36' \
+--header 'X-Client-Version: COR_FSM_WORKFORCE_MANAGEMENT' \
+--header 'Content-Type: application/json;charset=UTF-8' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Cache-Control: max-age=0' \
+--header 'X-Client-Id: COR_FSM_PORTAL' \
+--header 'Referer: http://localhost:3000/' \
+--data '{
+  "query": "SELECT sc.code, sc.udf.SC_MainCustomer, sc.udf.SC_FeedbackRequired, sc.udf.SC_Category, sc.udf.SC_SubCategory, sc.udf.SC_PortalID FROM ServiceCall sc INNER JOIN Activity act ON sc.id = act.object.objectId WHERE act.id = '\''8645a38201774c90b964c7f8941fecda'\''"
+}
+
+'
